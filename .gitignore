@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Qt
+*.user
+
+!/dependencies/*
+!/dependencies/win/*
+!/dependencies/linux/*
+!/dependencies/mac/*
