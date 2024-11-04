@@ -34,6 +34,8 @@
 # Qt
 *.user
 
+/build
+
 !/dependencies/*
 !/dependencies/win/*
 !/dependencies/linux/*

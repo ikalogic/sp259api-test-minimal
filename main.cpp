@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     ihwapi_err_code_t e;
     sp259api_handle h = nullptr;
 
-    e = sp259api_create_new_handle(&h, sp259api_model_t::sp259_standard);
+    e = sp259api_create_new_handle(&h, sp259api_model_t::sp259_industrial);
     assert_err(e);
 
     e =  sp259api_create_device_list(h);
