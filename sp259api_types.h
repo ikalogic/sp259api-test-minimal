@@ -138,6 +138,33 @@ struct sp259api_settings_t
      */
     uint8_t trig_order;
 
+    //********
+    //Industrial version (SP259I) only related settings
+    //********
+
+    bool industrial_enable_can;
+    bool industrial_enable_rs485_1;
+    bool industrial_enable_rs485_2;
+    bool industrial_enable_rs232_1;
+    bool industrial_enable_rs232_2;
+    bool industrial_enable_lin;
+
+    /**
+     * @brief can_term when TRUE, CAN bus termination resistor is enabled
+     * @note This is only applicable to SP209i (industrial) version
+     */
+    bool can_term;
+    /**
+     * @brief rs485_1_term when TRUE, RS485 bus number 1's termination resistor is enabled
+     * @note This is only applicable to SP209i (industrial) version
+     */
+    bool rs485_1_term;
+    /**
+     * @brief rs485_2_term when TRUE, RS485 bus bumber 2's termination resistor is enabled
+     * @note This is only applicable to SP209i (industrial) version
+     */
+    bool rs485_2_term;
+
 };
 
 /**
